@@ -6,14 +6,16 @@ const Homepage = () => {
   const [image,setImage] = useState(false)
   return (
     <div className='heading'>
+    {image ? <img className='img' src={images} alt='any'/> : 
+    <div>
       <Link to="/class5/days">
-      <button className='button1'> Class 1 - 5  </button>
+        <button className='button1'> Class 1 - 5  </button>
       </Link>
       <Link to="/class6/days">   
           <button className='button1'> Class 6 - 8 </button>
       </Link>
-      <button className='button1' onClick={()=> setImage(true)}>View Rate</button>
-      {image ? <img src={images} alt='any'/> : ""}
+     </div>}
+      <button className='button1' onClick={()=> setImage(!image)}>{image ? "Hide Rate" : "View Rate"}</button>
       
       </div>
   )
