@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import images from './Assets/bg.jpg'
-
+import Footer from './Footer';
 const Homepage = () => {
   const [image,setImage] = useState(false)
   return (
@@ -16,7 +16,7 @@ const Homepage = () => {
       </Link>
      </div>}
       <button className='button1' onClick={()=> setImage(!image)}>{image ? "Hide Rate" : "View Rate"}</button>
-      
+      <Footer/>
       </div>
   )
 }
