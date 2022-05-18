@@ -16,7 +16,7 @@ const Homepage = () => {
       </Link>
      </div>}
       <button className='button3' onClick={()=> setImage(!image)}>{image ? "Hide Rate" : "View Rate"}</button>
-      <Footer/>
+      {/* <Footer/> */}
       </div>
   )
 }
