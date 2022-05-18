@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import images from './Assets/bg.jpg'
-import Footer from './Footer';
+// import Footer from './Footer';
 const Homepage = () => {
   const [image,setImage] = useState(false)
   return (
